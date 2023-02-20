@@ -1,0 +1,29 @@
+#input of the elements 
+n = int(input("enter number of entries you want to enter-->"))
+li=[]
+for i in range (n):
+    a = int(input())
+    li.append(a)
+print (li)     
+#mean 
+mean = sum(li)/n
+print ("Mean-->",mean)
+#SD
+j=0
+l2=[]
+for j in range (len(li)):
+    a=li[j]-mean
+    l2.append(a)
+    
+l3=[]
+for f in range (len(l2)):
+    b=l2[f]**2
+    l3.append(b)
+    
+import math 
+p=sum(l3)/n
+SD= math.sqrt(p)
+print ("Standard Deviation-->", SD)
+#variance 
+var= SD**2
+print("Variance-->",var)
