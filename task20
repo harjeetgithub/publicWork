@@ -1,0 +1,38 @@
+#define a function, to calculate variance
+def variance(X):
+    mean = sum(X)/len(X)
+    tot = 0.0
+    for x in X:
+        tot = tot + (x - mean)**2
+    return tot/len(X)
+ 
+# call the function with data set
+x = [10,7,9,11,15,12,13,11,9,10] 
+print("variance is: ", variance(x))
+
+variance is:  4.610000000000001
+
+#program to print mean of elements
+x=[10,7,9,11,15,12,13,11,9,10]
+a= len(x)
+get_sum = sum (x)
+mean= get_sum/a
+print("mean is : "+ str (mean))
+
+mean is : 10.7
+
+#program to print standard deviation
+from math import sqrt
+n= [10,7,9,11,15,12,13,11,9,10] 
+
+mean =sum(n)/len(n)
+SUM= 0
+for i in n :
+  SUM +=(i-mean)**2
+
+
+
+stdeV = sqrt(SUM/(len(n)-1)) 
+print(stdeV)
+
+2.2632326929023945
